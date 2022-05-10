@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website SyaifulNW</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <section class="header" id="beranda">
+        <nav>
+            <h1>Syaiful Nur Wardani</h1>
+            <div class="nav-links" id="navLinks">
+                <i class="icon" onclick="hideMenu()"> <img src="src/icon.svg" width="20px" /> </i>
+                <ul>
+                    <li><a href="#beranda">BERANDA</a></li>
+                    <li><a href="#tentang">TENTANG SAYA</a></li>
+                    <li><a href="#layanan">LAYANAN</a></li>
+                    <li><a href="#kontak">KONTAK </a></li>
+                    <li><a href="data.diri.html">PROFIL </a></li>
+                </ul>
+            </div>
+            <i class="icon" onclick="showMenu()"><img src="src/menu.png" width="20px" /></i>
+        </nav>
+
+        <div class="text-box">
+            <h2>Halo, Selamat Datang di Website Pribadi Saya</h2>
+            <p>Perkenalkan Nama saya Syaiful Nur Wardani, Saya adalah seorang Front End Developer.</p>
+            <a href="#tentang" class="hero-btn">Lihat lebih lanjut tentang saya</a>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section class="tentang" id="tentang">
+        <h2>Tentang Saya</h2>
+
+        <div class="row">
+            <div class="tentang-col">
+                <h3>Pendidikan</h3>
+                <p>
+                    SD Negeri 2 Waru <br /> SMP Negeri 1 Kebakkramat <br /> SMA N 1 Kebakkramat <br /> Universitas Duta Bangsa Surakarta <br /> (S1 - Sistem Informasi)
+                </p>
+            </div>
+            <div class="tentang-col">
+                <h3>Skill</h3>
+                <p>
+                    Hard Skill : <br /> 1. HTML/CSS <br /> 2. Javascript Fundamentals <br /> 3. Vue js & Bootsrap <br />
+                    <br /> Soft Skill <br /> 1. English Pasive <br /> 2. Good Communication <br /> 3. Public Speaking
+                </p>
+            </div>
+            <div class="tentang-col">
+                <h3>Hobi</h3>
+                <p>
+                    1. Ngoding <br /> 2. Membaca <br /> 3. Desain
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan -->
+    <section class="layanan" id="layanan">
+        <h2>Layanan Saya</h2>
+        <p>Beberapa produk layanan yang bisa saya kerjakan</p>
+        <div class="row">
+            <div class="layanan-col">
+                <img src="img/office.jpg" alt="uiux" />
+                <h3>Front End Web Developer</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quae corporis vel adipisci mollitia laudantium natus quidem culpa quisquam eius.</p>
+            </div>
+            <div class="layanan-col">
+                <img src="img/web.jpg" alt="web" />
+                <h3>Web Designer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae at nam dolorem veritatis hic ea perferendis perspiciatis minima neque!</p>
+            </div>
+            <div class="layanan-col">
+                <img src="img/ux.jpg" alt="dev" />
+                <h3>UI/UX Designer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempora nobis error sunt! Accusantium tenetur, beatae natus perspiciatis necessitatibus facere.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="kontak" id="kontak">
+        <div>
+            <form onsubmit="event.preventDefault(); validateForm()">
+                <h2>Kontak Saya</h2>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" placeholder="Your name" />
+                <small class="error"></small>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Your Email" />
+                <small class="error"></small>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" placeholder="Your Message" rows="6"></textarea>
+                <small class="error"></small>
+
+                <div class="center">
+                    <input type="submit" value="Submit" />
+                    <p id="success"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <footer>
+            <h3>&copy Syaiful Nur Wardani - 2022 - All Right Reserved</h3>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil SyaifulNW</title>
+    <link rel="stylesheet" href="css/style2.css" />
+</head>
+
+<body>
+    <section class="header" id="beranda">
+        <nav>
+            <h1>Syaiful Nur Wardani</h1>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">BERANDA</a></li>
+                    <li><a href="#beranda">BIODATA</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h2>Biodata Saya</h2>
+            <img class="foto" src="img/foto.jpg" alt="fotodiri" />
+            <br />
+            <p>Nama : Syaiful Nur Wardani</p>
+            <br />
+            <p>Tempat Tgl Lahir : Sragen, 26 Agustus 2000</p>
+            <br />
+            <p>Alamat : Jengglong, Waru, Kebakkramat, Karanganyar</p>
+            <br />
+            <p>Jenis Kelamin : Laki-Laki</p>
+            <br />
+            <p>Hobi : Main Game, Nonton Film, Sosmed.</p>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio Saya</h2>
+        <div class="slideshow-container">
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <div class="mySlides fade">
+                <div class="numbertext">1</div>
+                <div class="gambar">
+                    <img src="img/1.jpg" />
+                </div>
+                <div class="text">Web Design</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3</div>
+                <div class="gambar">
+                    <img src="img/2.jpg" />
+                </div>
+                <div class="text">UI Design</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2</div>
+                <div class="gambar">
+                    <img src="img/3.jpg" />
+                </div>
+                <div class="text">UX Design</div>
+            </div>
+
+            <button class="prev" onclick="plusSlides(-1)">&#10095;</button>
+        </div>
+
+        <br />
+        <div>
+            <div class="fitur">
+                <span class="dot" onclick="currentSlides(1)"></span>
+                <span class="dot" onclick="currentSlides(2)"></span>
+                <span class="dot" onclick="currentSlides(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
